@@ -51,7 +51,6 @@ searchGifs(query: string = "") {
 
   this.http.get<SearchGifsResponse>(`${this.serviceUrl}/search`, {params})
     .subscribe((resp) => {
-      console.log(resp.data);
       this.results = resp.data;
       localStorage.setItem('results', JSON.stringify(this.results))
     })
