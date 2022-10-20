@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { GifsService } from '../../gifs/services/gifs.service';
+import { SearchGifsResponse } from '../../gifs/interface/gifs.interface';
 
 @Component({
   selector: 'app-sidebar',
@@ -13,7 +14,10 @@ export class SidebarComponent  {
   }
 
 
-  constructor(private gifsService: GifsService) {
-   }
+  constructor(private gifsService: GifsService) {}
 
+  search(item: string) {
+   this.gifsService.searchGifs(item)
+  }
 }
+
