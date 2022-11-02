@@ -1,0 +1,18 @@
+
+.card-personalized {
+height: 500px;
+margin: 20px;
+}
+
+.img-personalized {
+  height: 80%;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+

@@ -1,15 +1,17 @@
 
-<div class="row">
-  <div *ngFor="let gif of results" class="col-md-4 col-sm-6 animate__animated animate__fadeIn animate__faster">
 
-    <div class="card">
+<div class="row ">
+  <div *ngFor="let gif of results" class="col-md-4 col-sm-6 animate__animated animate__fadeIn animate__faster ">
+
+    <div class="card card-personalized">
       <img  src="{{gif.images.downsized_medium.url}}"
             alt="gif.title"
-            class="card-img-top">
+            class="card-img-top img-personalized"
+            >
       <div class="card-body">
-        <p class="card-text">
+        <h5 class="card-title text-center text-capitalize">
           {{gif.title}}
-        </p>
+        </h5>
       </div>
     </div>
 

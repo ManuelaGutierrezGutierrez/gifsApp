@@ -9,6 +9,8 @@ import { SearchGifsResponse } from '../../gifs/interface/gifs.interface';
 })
 export class SidebarComponent  {
 
+
+
   get historial() {
     return this.gifsService.historial
   }
@@ -19,5 +21,17 @@ export class SidebarComponent  {
   search(item: string) {
    this.gifsService.searchGifs(item)
   }
-}
+
+  // reset(){
+
+  //   localStorage.clear();
+  //   console.log(this.gifsService.historial);
+
+  //   }
+
+  }
+
+
+
+
 

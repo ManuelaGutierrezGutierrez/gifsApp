@@ -58,4 +58,6 @@ searchGifs(query: string = "") {
 }
 
 
+
+
 }
